@@ -1,10 +1,11 @@
 import Spline from "@splinetool/react-spline";
+import {BsArrowUpRight} from "react-icons/bs";
 
 function HeroSection() {
   return (
     <div className="main-content">
         <div className="spline-background">
-          <Spline scene="https://prod.spline.design/DoljBMn3Nnq6Ap8H/scene.splinecode" />
+        <Spline scene="https://prod.spline.design/DoljBMn3Nnq6Ap8H/scene.splinecode" />
         </div>
 
         <h1>
@@ -12,7 +13,7 @@ function HeroSection() {
           businesses <span className="love">you love</span>
         </h1>
 
-        <button>Join the Rivly United for FREE</button>
+        <button>Join the Rivly United for FREE <BsArrowUpRight/></button>
         <button>Shop all products</button>
       </div>
   )
