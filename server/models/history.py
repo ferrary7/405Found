@@ -15,6 +15,5 @@ purchase_history = Table(
     Column("user_id", Integer, ForeignKey("users.id")),
     Column("product_id", Integer, ForeignKey("products.id")),
     Column("quantity", Integer),
-    Column("price_at_purchase", Float),
     Column("purchased_at", DateTime(timezone=True), server_default=func.now())
 )

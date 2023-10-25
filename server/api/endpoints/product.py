@@ -7,10 +7,12 @@ from core.database import database
 
 router = APIRouter()
 
+
 # Public route to view all products
 @router.get("/", response_model=List[ProductInDB])
 async def list_products():
     return await get_all_products()
+
 
 # Public route to view a specific product
 @router.get("/{product_id}", response_model=ProductInDB)
@@ -20,6 +22,7 @@ async def read_product(product_id: int):
         raise HTTPException(status_code=404, detail="Product not found")
     return product
 
+
 # Protected route to add a product
 @router.post("/", response_model=ProductInDB)
 async def create_product_endpoint(product: ProductCreate, current_user: dict = Depends(get_current_user)):
@@ -27,6 +30,7 @@ async def create_product_endpoint(product: ProductCreate, current_user: dict = D
     product_data["user_id"] = current_user["id"]
     product_id = await create_product(product_data)
     return {**product_data, "id": product_id}
+
 
 # Protected route to update a product
 @router.put("/", response_model=ProductInDB)
@@ -39,6 +43,7 @@ async def update_existing_product(product: ProductUpdate, current_user: dict = D
         raise HTTPException(status_code=403, detail="Not authorized")
     updated_product = await update_product(product_id, product.dict(exclude={"product_id"}))
     return updated_product
+
 
 # Protected route to delete a product
 @router.delete("/{product_id}", response_model=dict)

@@ -7,9 +7,8 @@ async def add_browsing_record(user_id: int, product_id: int):
     await database.execute(query)
 
 
-async def add_purchase_record(user_id: int, product_id: int, quantity: int, price: float):
-    query = purchase_history.insert().values(user_id=user_id, product_id=product_id, quantity=quantity,
-                                             price_at_purchase=price)
+async def add_purchase_record(user_id: int, product_id: int, quantity: int):
+    query = purchase_history.insert().values(user_id=user_id, product_id=product_id, quantity=quantity)
     await database.execute(query)
 
 

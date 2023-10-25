@@ -12,8 +12,8 @@ async def record_browsing(product_id: int, current_user: dict = Depends(get_curr
 
 
 @router.post("/purchase/")
-async def record_purchase(product_id: int, quantity: int, price: float, current_user: dict = Depends(get_current_user)):
-    await add_purchase_record(current_user["id"], product_id, quantity, price)
+async def record_purchase(product_id: int, quantity: int, current_user: dict = Depends(get_current_user)):
+    await add_purchase_record(current_user["id"], product_id, quantity)
     return {"message": "Purchase record added"}
 
 
