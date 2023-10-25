@@ -16,7 +16,9 @@ function Navbar() {
     <>
     <div className='main-container'>
     <div className="header">
-        <div className="logo">405 Found</div>
+    <div class="glitch-wrapper">
+   <div class="glitch" data-glitch="405 Found">405 Found</div>
+</div>
         <div className="categories">
           24 Categories <span>View All</span>
         </div>
