@@ -1,5 +1,5 @@
 from core.database import metadata
-from sqlalchemy import Table, Column, Integer, Float, DateTime, ForeignKey, func
+from sqlalchemy import Table, Column, Integer, DateTime, ForeignKey, func
 
 browsing_history = Table(
     "browsing_history", metadata,
