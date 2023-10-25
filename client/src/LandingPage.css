@@ -10,24 +10,22 @@
     display: flex;
     align-items: center;
     justify-content: space-evenly;
-    background-color: #ffffff;  
-
-
+    background-color: #ffffff;
 }
     
 .logo {
-    font-size: 24px;
-    font-weight: bold;
-    color: #000;
+  font-size: 24px;
+  font-weight: bold;
+  color: #000;
 }
 
 .categories {
-    font-size: 16px;
-    color: #555;
+  font-size: 16px;
+  color: #555;
 }
 
 .categories span {
-    color: #007BFF;  /* You can adjust this color if needed */
+  color: #007bff; /* You can adjust this color if needed */
 }
 
 .search-container {
@@ -87,8 +85,8 @@ input[type="text"] {
 }
 
 .user {
-    font-size: 16px;
-    color: #555;
+  font-size: 16px;
+  color: #555;
 }
 
 .categories-container{
@@ -124,62 +122,145 @@ input[type="text"] {
 /*Navbar Ends*/
 
 .main-content {
-    position: relative;
-    padding: 40px;
-    text-align: center;
-    height: 50vh;
-    font-family: 'Red Hat Display', sans-serif;
+  position: relative;
+  padding: 40px;
+  text-align: center;
+  height: 50vh;
+  font-family: "Red Hat Display", sans-serif;
 }
 
 .main-content h1 {
-    font-size: 38px;
-    font-weight: bold;
-    margin-bottom: 20px;
-    color: #000;
+  font-size: 38px;
+  font-weight: bold;
+  margin-bottom: 20px;
+  color: #000;
 }
 .spline-background {
-    position: absolute;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    z-index: -1; /* ensure the spline scene stays behind all other content */
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: -1; /* ensure the spline scene stays behind all other content */
 }
 .love {
-    background-image: linear-gradient(to right, #4C84FF, #A682FF);
-    /* Ensure the gradient is applied only to the text */
-    background-clip: text;
-    /* Make the text transparent so that the background shows through */
-    color: transparent;
-    display: inline; /* to ensure the gradient follows the text width */
-    -webkit-background-clip: text;
--webkit-text-fill-color: transparent;
+  background-image: linear-gradient(to right, #4c84ff, #a682ff);
+  /* Ensure the gradient is applied only to the text */
+  background-clip: text;
+  /* Make the text transparent so that the background shows through */
+  color: transparent;
+  display: inline; /* to ensure the gradient follows the text width */
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
-
-
 button {
-    padding: 12px 24px;
-    margin: 10px;
-    border: none;
-    border-radius: 5px;
-    font-size: 16px;
-    cursor: pointer;
+  padding: 12px 24px;
+  margin: 10px;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
 }
 
 button:first-child {
-    background-color: #007BFF;
-    color: #ffffff;
+  background-color: #007bff;
+  color: #ffffff;
 }
 
 button:last-child {
-    background-color: #ffffff;
-    color: #007BFF;
+  background-color: #ffffff;
+  color: #007bff;
 }
 
+.below-herosection-cont {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: flex-end;
+  padding: 2rem 2rem;
+  gap: 3rem;
+}
+.below-hero-box-cont {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+  width: 16rem;
+  height: 24rem;
+  background: rgba(99, 94, 247, 0.81);
+  border-radius: 2rem;
+  padding: 2rem;
+}
+.star-cont {
+  display: flex;
+  flex-direction: row;
+}
+#middle-text {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  justify-content: center;
+  gap: 0rem;
+}
+#middle-text > h1 {
+  color: white;
+  font-family: Red Hat Display;
+  font-size: 2.5rem;
+  font-style: normal;
+  font-weight: 800;
+  margin: 0;
+}
+#middle-text p {
+  color: #f6f6f6;
+  font-family: Red Hat Display;
+  font-size: 1.25rem;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  margin: 0;
+}
 
+.below-hero-small-box-cont {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.below-hero-small-box {
+  width: 15.6875rem;
+  height: 10.625rem;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-end;
+  padding: 1rem;
+  background-color: #937BCF;
+  border-radius: 2rem;
+}
+.below-hero-small-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
 
+.display-row {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
 
+}
+.display-row span {
+    width: 2rem;
+    height: 1rem;
+    border-radius: 1rem;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 .glitch-wrapper {
    display: flex;
    align-items: center;
