@@ -1,0 +1,30 @@
+/backend
+│
+├── /app
+│   ├── /api
+│   │   ├── /endpoints
+│   │   │   ├── users.py
+│   │   │   ├── products.py
+│   │   │   ├── browsing.py
+│   │   │   └── purchase.py
+│   │   └── api.py
+│   │
+│   ├── /core
+│   │   ├── config.py
+│   │   └── database.py
+│   │
+│   ├── /models
+│   │   ├── user.py
+│   │   ├── product.py
+│   │   ├── browsing.py
+│   │   └── purchase.py
+│   │
+│   ├── /crud
+│   │   ├── user.py
+│   │   ├── product.py
+│   │   ├── browsing.py
+│   │   └── purchase.py
+│   │
+│   └── main.py
+│
+└── requirements.txt
