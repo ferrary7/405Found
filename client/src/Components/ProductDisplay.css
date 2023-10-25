@@ -1,0 +1,119 @@
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500&display=swap');
+
+.product_display_main {
+    border: none;
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;   
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Adds a subtle shadow */
+}
+
+.product_image {
+    height: 75%;
+    width: 35%;
+    border: none;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* subtle shadow */
+    overflow: hidden;
+    border-radius: 10px;
+}
+
+.product_information {
+    height: 75%;
+    width: 55%;
+    border: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+    font-family: 'Red Hat Display', sans-serif;
+    padding: 20px;
+}
+
+.Product_Name h1 {
+    color: #222;
+    margin: 0;
+    font-size: 28px;
+    margin-bottom: 8px;
+}
+
+.Product_Name p {
+    color: #777;
+    margin: 0;
+    font-size: 16px;
+}
+
+.product_rating {
+    display: flex;
+    align-items: center;
+}
+
+.product_rating .MuiRating-root {
+    color: #FFD700; /* gold for stars */
+}
+
+.Product_Pricing h2 {
+    color: #333;
+    margin: 0;
+    font-size: 32px;
+    font-weight: bold;
+}
+
+.Product_Pricing {
+    display: flex;
+    align-items: center;
+}
+
+.Product_Pricing div {
+    margin-left: 20px;
+    padding: 10px 20px;
+    background-color: #007BFF; /* button color */
+    color: #FFF;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s all;
+}
+
+.Product_Pricing div:hover {
+    background-color: #0056b3; /* darken on hover */
+}
+
+.add-to-cart-btn {
+    background: linear-gradient(90deg, #6863DC 0%, #5750F0 100%);
+    color: white;
+    width: 25%;
+    padding: 12px 24px;
+    border-radius: 10px;
+    font-size: 18px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 8px 16px rgba(87, 80, 240, 0.2); /* subtle shadow */
+    cursor: pointer;
+    border: none;
+    outline: none;
+    transition: 0.3s all;
+    font-family: 'Red Hat Display', sans-serif;
+}
+
+.add-to-cart-btn:hover {
+    background: linear-gradient(90deg, #5750F0 0%, #6863DC 100%); /* swapped colors for hover effect */
+    transform: scale(1.05); /* Makes the button slightly larger on hover */
+    transition: transform 0.3s ease-in-out; /* Smooth transition */
+     
+}
+
+.add-to-cart-btn:active {
+    transform: translateY(2px); /* subtle press down effect */
+}
+.customTooltip {
+    background-color: #007BFF !important;
+    color: white !important;
+    font-size: 0.9rem !important;
+    border-radius: 8px !important;
+  }
+  
+  .customTooltipArrow {
+    color: #007BFF !important;
+  }
