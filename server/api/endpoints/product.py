@@ -1,9 +1,9 @@
 from typing import List
-from fastapi import APIRouter, Depends, HTTPException
-from models.product import products, ProductCreate, ProductUpdate, ProductInDB
-from crud.product import create_product, get_product, get_all_products, update_product, delete_product
+
 from api.dependencies import get_current_user
-from core.database import database
+from crud.product import create_product, get_product, get_all_products, update_product, delete_product
+from fastapi import APIRouter, Depends, HTTPException
+from models.product import ProductCreate, ProductUpdate, ProductInDB
 
 router = APIRouter()
 
