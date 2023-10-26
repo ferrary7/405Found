@@ -41,12 +41,13 @@ function HeroSection() {
         Shop everything you need <br /> online from the US <br /> businesses{' '}
         <span className="love">you love</span>
       </motion.h1>
-
+      <div style={{display: "flex", flexDirection: "column", alignItems: "center"}}>
       <motion.button
         variants={buttonVariants}
         initial="hidden"
         animate={inView ? 'visible' : 'hidden'}
         transition={{ duration: 0.5, delay: 1 }}
+        style={{width: "20%", borderRadius: "20px"}}
       >
         Join the Rivly United for FREE <BsArrowUpRight />
       </motion.button>
@@ -56,10 +57,13 @@ function HeroSection() {
         initial="hidden"
         animate={inView ? 'visible' : 'hidden'}
         transition={{ duration: 0.5, delay: 1.2 }}
+        style={{fontSize: "1.1rem"}}
       >
         Shop all products
       </motion.button>
+      </div>
     </motion.div>
+  
   );
 }
 
