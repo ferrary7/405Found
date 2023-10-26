@@ -10,8 +10,8 @@ export const login = async (data) => {
       username: data.email, // Ensure that email is sent as 'username'
       password: data.password,
     }),
-});
-return response.json();
+  });
+  return response.json();
 };
 
 export const register = async (data) => {
@@ -24,3 +24,33 @@ export const register = async (data) => {
   });
   return response.json();
 };
+
+export const getProducts = () => {
+  fetch("http://localhost:8000/products/")
+    .then((resp) => {
+      return resp.json();
+    })
+    .then((res) => {
+      console.log(res);
+    })
+    .catch((e) => {
+      console.log("Error Fetching data", e.message);
+    });
+};
+
+export const getProductById = (id) => {
+  fetch(`http://localhost:8000/products/${id}`)
+    .then((resp) => {
+      return resp.json();
+    })
+    .then((res) => {
+      console.log(res);
+    })
+    .catch((e) => {
+      console.log("Error Fetching data", e.message);
+    });
+};
+
+export const getRecommendations = () => {
+  
+}
