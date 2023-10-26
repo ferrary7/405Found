@@ -34,7 +34,8 @@ async def login_for_access_token(form_data: OAuth2PasswordRequestForm = Depends(
             status_code=400, detail="Incorrect email or password")
 
     access_token = create_access_token(data={"sub": user["email"]})
-    return {"access_token": access_token, "token_type": "bearer"}
+    return {"access_token": access_token, "token_type": "bearer", "name": user["name"]}
+
 
 @router.post("/register/", response_model=UserOut)
 async def register_user(user: UserCreate):
