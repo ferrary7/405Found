@@ -1,7 +1,7 @@
 import bag from "../assets/bag.jpeg"
 const ProductCard = () => {
   return (
-    <div className="product-card-container" style={{height: "25rem", boxShadow: "0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19)", margin: "2rem 3.7rem", padding: "2rem", width: "20rem", borderRadius: "2rem", fontFamily: 'red hat display'}}>
+    <div className="product-card-container" style={{height: "25rem", boxShadow: "rgba(0, 0, 0, 0.1) 0px 20px 25px -5px, rgba(0, 0, 0, 0.04) 0px 10px 10px -5px", margin: "2rem 3.7rem", padding: "2rem", width: "20rem", borderRadius: "2rem", fontFamily: 'red hat display'}}>
         <img src={bag} alt="" style={{objectFit: "cover"}} height={300} width={300}/>
         <div style={{display: "flex",justifyContent: "space-between", alignItems: "center", width: "100%"}}>
         <div className="product-info" style={{display: "flex", flexDirection: "column", alignItems: "flex-start", justifyContent: "center"}}>

@@ -3,6 +3,7 @@ import "./LandingPage.css";
 import Navbar from "./Components/Navbar";
 import HeroSection from "./Components/HeroSection";
 import BelowHeroSection from "./Components/BelowHeroSection";
+import ExploreProducts from "./Components/ExploreProducts";
 
 function App() {
   return (
@@ -10,6 +11,7 @@ function App() {
       <Navbar />
       <HeroSection />
       <BelowHeroSection/>
+      <ExploreProducts/>
     </div>
   );
 }
