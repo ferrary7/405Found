@@ -1,27 +1,34 @@
-import React from "react";
+import { useEffect, useState } from "react";
 import "./ProductDisplay.css";
 import Demo from "../assets/Demo.jpeg";
 import Rating from "@mui/material/Rating";
-import { GrCart } from "react-icons/gr";
+// import { GrCart } from "react-icons/gr";
 import ShoppingCartIcon from "@mui/icons-material/ShoppingCart";
 import Tooltip from "@mui/material/Tooltip";
 import { motion } from "framer-motion";
+import { getProductById } from "./api";
 
 // Image animation variants
 const imageVariants = {
   hidden: { scale: 0.8, opacity: 0 },
-  visible: { scale: 1, opacity: 1, transition: { duration: 0.8 } }
+  visible: { scale: 1, opacity: 1, transition: { duration: 0.8 } },
 };
 
+const id = 6;
+
 function ProductDisplay() {
-  const [value, setValue] = React.useState(2);
+  useEffect(() => {
+    getProductById(id);
+  }, []);
+  const [value, setValue] = useState(2);
   return (
     <div className="product_display_main">
-
-      <motion.div className="product_image"
-                  variants={imageVariants}
-                  initial="hidden"
-                  animate="visible">
+      <motion.div
+        className="product_image"
+        variants={imageVariants}
+        initial="hidden"
+        animate="visible"
+      >
         <img src={Demo} alt="" style={{ width: "100%", height: "100%" }} />
       </motion.div>
 
@@ -48,13 +55,13 @@ function ProductDisplay() {
             placement="top"
             sx={{
               "& .MuiTooltip-tooltip": {
-                backgroundColor: "#007BFF", 
+                backgroundColor: "#007BFF",
                 color: "white",
                 fontSize: "0.9rem",
                 borderRadius: "8px",
               },
               "& .MuiTooltip-arrow": {
-                color: "#007BFF", 
+                color: "#007BFF",
               },
             }}
           >

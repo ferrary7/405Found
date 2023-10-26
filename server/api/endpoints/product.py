@@ -1,9 +1,10 @@
-from typing import List
+from typing import List, Union
 
 from api.dependencies import get_current_user
-from crud.product import create_product, get_product, get_all_products, update_product, delete_product
+from crud.product import create_multiple_products, create_product, get_product, get_all_products, update_product, delete_product
 from fastapi import APIRouter, Depends, HTTPException
 from models.product import ProductCreate, ProductUpdate, ProductInDB
+
 
 router = APIRouter()
 
@@ -43,6 +44,13 @@ async def update_existing_product(product: ProductUpdate, current_user: dict = D
         raise HTTPException(status_code=403, detail="Not authorized")
     updated_product = await update_product(product_id, product.dict(exclude={"product_id"}))
     return updated_product
+
+# Protected route to add multiple products at once
+@router.post("/multiple/", response_model=dict)
+async def create_multiple_products_endpoint(products: List[ProductCreate], current_user: dict = Depends(get_current_user)):
+    products_data = [{"user_id": current_user["id"], **product.dict()} for product in products]
+    await create_multiple_products(products_data)
+    return {"message": "Products successfully added"}
 
 
 # Protected route to delete a product
