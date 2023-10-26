@@ -2,7 +2,6 @@ import { IoSearchOutline } from "react-icons/io5";
 import { GrCart } from "react-icons/gr";
 import Badge from "@mui/material/Badge";
 import { styled } from "@mui/material/styles";
-import { useEffect } from "react";
 import { useNavigate } from "react-router-dom";
 
 // Styled component
@@ -16,19 +15,6 @@ const StyledBadge = styled(Badge)(({ theme }) => ({
 
 function Navbar() {
   const navigate = useNavigate();
-
-  // Fetching products on mount
-  useEffect(() => {
-    fetch("http://localhost:8000/products/")
-      .then((resp) => resp.json())
-      .then((res) => {
-        console.log(res);
-      })
-      .catch((e) => {
-        console.error("Error Fetching data", e.message);
-      });
-  }, []);
-
   const user = localStorage.getItem("name");
   const token = localStorage.getItem("token");
 
@@ -43,7 +29,11 @@ function Navbar() {
       <div className="main-container">
         <div className="header">
           <div className="glitch-wrapper">
-            <div className="glitch" data-glitch="405 Found">
+            <div
+              className="glitch"
+              data-glitch="405 Found"
+              onClick={() => navigate("/", { replace: true })}
+            >
               405 Found
             </div>
           </div>
@@ -55,7 +45,7 @@ function Navbar() {
             <IoSearchOutline className="search-icon" />
           </div>
           <div className="cart-container">
-            <StyledBadge badgeContent={1} color="secondary">
+            <StyledBadge badgeContent={0} color="secondary">
               <GrCart className="cart-icon" />
             </StyledBadge>
           </div>
