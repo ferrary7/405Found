@@ -1,0 +1,122 @@
+[
+  {
+    "name": "EcoComfort Mattress",
+    "image": "https://images.squarespace-cdn.com/content/v1/5a5c38d6ccc5c5e98cccce06/1551523969873-CSSIS8C25Y2ICON3N705/Bonnell-Spring-Mattress.png?format=2500w",
+    "description": "This supreme mattress offers layers of natural, organic materials for a night of restful sleep. Adjusting to your body's contours, it relieves pressure points and promotes spine alignment.",
+    "price": 259.99
+  },
+  {
+    "name": "BlendMax Smoothie Maker",
+    "image": "link-to-your-image-2",
+    "description": "Unlock the full potential of fruits and vegetables. This high-powered blender ensures your smoothies are perfectly blended every time.",
+    "price": 145.0
+  },
+  {
+    "name": "Aero Wireless Earphones",
+    "image": "link-to-your-image-3",
+    "description": "Experience sound like never before. With noise-canceling tech, Aero ensures clarity in every beat. Ideal for active individuals.",
+    "price": 79.95
+  },
+  {
+    "name": "SolarGlow Outdoor Lanterns",
+    "image": "link-to-your-image-4",
+    "description": "Illuminate your outdoor spaces. These solar lanterns are perfect for any setting, ensuring a warm glow wherever they're placed.",
+    "price": 33.5
+  },
+  {
+    "name": "FitPulse Pro Smartwatch",
+    "image": "link-to-your-image-5",
+    "description": "Beyond tracking fitness, this smartwatch connects you with the world. Stay updated, stay fit. Water-resistant for active users.",
+    "price": 199.99
+  },
+  {
+    "name": "HydraClean Water Filter",
+    "image": "link-to-your-image-6",
+    "description": "Experience the purity of crystal-clear water. HydraClean removes impurities, ensuring safe drinking water for you and your family.",
+    "price": 110.0
+  },
+  {
+    "name": "UltraDrive Pro SSD",
+    "image": "link-to-your-image-7",
+    "description": "Boost your computer's performance. UltraDrive offers rapid read and write speeds, ensuring your tasks are completed in a flash.",
+    "price": 225.5
+  },
+  {
+    "name": "Breeze Air Purifier",
+    "image": "link-to-your-image-8",
+    "description": "Breathe clean, breathe easy. The Breeze purifier removes airborne particles, ensuring a healthier environment indoors.",
+    "price": 139.99
+  },
+  {
+    "name": "VividPro Camera",
+    "image": "link-to-your-image-9",
+    "description": "Capture memories in stunning clarity. VividPro offers high resolution and an array of features for photography enthusiasts.",
+    "price": 459.9
+  },
+  {
+    "name": "ThermalGuard Insulated Bottle",
+    "image": "link-to-your-image-10",
+    "description": "Keep your drinks at the perfect temperature. ThermalGuard ensures your beverages stay hot or cold for hours.",
+    "price": 29.95
+  },
+  {
+    "name": "FlexFit Yoga Mat",
+    "image": "link-to-your-image-11",
+    "description": "Enhance your yoga sessions. FlexFit offers a non-slip surface and cushioned support, helping you focus on your poses.",
+    "price": 34.99
+  },
+  {
+    "name": "SteamMaster Iron",
+    "image": "link-to-your-image-12",
+    "description": "Achieve crisp, wrinkle-free clothes. SteamMaster offers efficient ironing with adjustable heat settings.",
+    "price": 49.9
+  },
+  {
+    "name": "BoltCharge Portable Charger",
+    "image": "link-to-your-image-13",
+    "description": "Stay powered on the go. BoltCharge provides rapid charging for your devices, ensuring you're always connected.",
+    "price": 38.99
+  },
+  {
+    "name": "AquaShine Dishwasher",
+    "image": "link-to-your-image-14",
+    "description": "Simplify kitchen cleanup. AquaShine ensures dishes come out spotless and ready for your next meal.",
+    "price": 499.99
+  },
+  {
+    "name": "CineView Projector",
+    "image": "link-to-your-image-15",
+    "description": "Turn any space into a theater. CineView offers sharp visuals and rich sound for the ultimate movie experience.",
+    "price": 329.0
+  },
+  {
+    "name": "EagleView Binoculars",
+    "image": "link-to-your-image-16",
+    "description": "See the world up close. EagleView provides crystal clear magnification, perfect for nature enthusiasts and event-goers.",
+    "price": 85.5
+  },
+  {
+    "name": "RapidHeat Space Heater",
+    "image": "link-to-your-image-17",
+    "description": "Stay warm during chilly days. RapidHeat offers adjustable temperatures, ensuring comfort wherever it's placed.",
+    "price": 59.99
+  },
+  {
+    "name": "CookPro Air Fryer",
+    "image": "link-to-your-image-18",
+    "description": "Cook your favorite meals with less oil. CookPro offers a healthier way to enjoy fried foods without the guilt.",
+    "price": 99.95
+  },
+  {
+    "name": "SoundWave Speaker",
+    "image": "link-to-your-image-19",
+    "description": "Elevate your music experience. SoundWave delivers powerful audio in a sleek design, perfect for any setting.",
+    "price": 119.0
+  },
+  {
+    "name": "GuardSecure Home Alarm",
+    "image": "link-to-your-image-20",
+    "description": "Protect what matters most. GuardSecure offers advanced security features, ensuring peace of mind for homeowners.",
+    "price": 189.95
+  }
+]
