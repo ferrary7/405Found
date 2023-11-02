@@ -562,3 +562,139 @@ button:last-child {
    align-items: center;
    gap: 1rem;
 }
+
+/* CartPage.css */
+
+/* CartPage.css */
+
+.cart-page {
+   max-width: 800px;
+   margin: 0 auto;
+   padding: 20px;
+   background-color: #fff;
+   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+   border-radius: 8px;
+ }
+
+ h2 {
+   color: #333;
+ }
+
+ .cart-items {
+   margin-top: 20px;
+ }
+
+ .cart-item {
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   border-bottom: 1px solid #eee;
+   padding: 10px 0;
+ }
+
+ .product-image img {
+   max-width: 80px;
+   max-height: 80px;
+   border-radius: 4px;
+   margin-right: 10px;
+ }
+
+ .product-details {
+   flex: 2;
+ }
+
+ .quantity-section {
+   display: flex;
+   align-items: center;
+ }
+
+ .quantity-section label {
+   margin-right: 5px;
+ }
+
+ .quantity-section input {
+   width: 40px;
+   padding: 5px;
+   margin-right: 10px;
+ }
+
+ .cart-item span {
+   flex: 1;
+ }
+
+ .cart-item button {
+   background-color: #dc3545;
+   color: #fff;
+   border: none;
+   padding: 8px 12px;
+   cursor: pointer;
+   border-radius: 4px;
+   transition: background-color 0.3s ease;
+ }
+
+ .cart-item button:hover {
+   background-color: #c82333;
+ }
+
+ .cart-summary {
+   margin-top: 20px;
+ }
+
+ .subtotal,
+ .tax,
+ .delivery-charge,
+ .total {
+   display: flex;
+   justify-content: space-between;
+   margin-bottom: 10px;
+ }
+
+ .coupon-section {
+   display: flex;
+   align-items: center;
+   margin-bottom: 10px;
+ }
+
+ .coupon-section label {
+   margin-right: 10px;
+ }
+
+ .coupon-section input {
+   padding: 5px;
+   margin-right: 10px;
+ }
+
+ .coupon-section button {
+   background-color: #007bff;
+   color: #fff;
+   border: none;
+   padding: 5px 10px;
+   cursor: pointer;
+   border-radius: 4px;
+   transition: background-color 0.3s ease;
+ }
+
+ .coupon-section button:hover {
+   background-color: #0056b3;
+ }
+
+ /* Responsive Styles */
+
+ @media (max-width: 600px) {
+   .cart-item {
+     flex-direction: column;
+     text-align: center;
+   }
+
+   .quantity-section {
+     justify-content: center;
+   }
+
+   .quantity-section input {
+     margin-right: 0;
+   }
+
+   .cart-item button {
+     margin-top: 10px;
+   }
+ }
